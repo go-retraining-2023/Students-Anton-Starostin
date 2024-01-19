@@ -12,7 +12,7 @@ func GetConnection() *dynamodb.DynamoDB {
     SharedConfigState: session.SharedConfigEnable,
     Config: aws.Config{
         Credentials: credentials.NewStaticCredentials("dummy", "dummy", "dummy"),
-        Endpoint:    aws.String("http://localstack:4566"),//tpdo: from config
+        Endpoint:    aws.String("http://localstack:4566"),//todo: from config
         Region:      aws.String("us-west-2"),
     },
 	}))
