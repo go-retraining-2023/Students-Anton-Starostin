@@ -1,1 +1,1 @@
-# Students-Anton-Starostin
+# golang-crud-thedynamodbbook

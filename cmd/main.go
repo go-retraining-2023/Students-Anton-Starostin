@@ -23,12 +23,13 @@ func main() {
 
 	logger.INFO("Waiting service starting.... ", nil)
 
+	/*
 	errors := Migrate(connection)
 	if len(errors) > 0 {
 		for _, err := range errors {
 			logger.PANIC("Error on migrate: ", err)
 		}
-	}
+	}*/
 	logger.PANIC("", checkTables(connection))
 
 	port := fmt.Sprintf(":%v", configs.Port)

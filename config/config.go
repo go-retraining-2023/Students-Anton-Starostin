@@ -22,7 +22,7 @@ func parseEnvToInt(envName, defaultValue string) int {
 
 func GetConfig() Config {
 	return Config{
-		Port:        parseEnvToInt("PORT", "8080"),
+		Port:        parseEnvToInt("PORT", "8087"),
 		Timeout:     parseEnvToInt("TIMEOUT", "30"),
 		Dialect:     env.GetEnv("DIALECT", "sqlite3"),
 		DatabaseURI: env.GetEnv("Database_URI", ":memory:"),
